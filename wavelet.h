@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cmath>
 #include <QList>
 #include <QVector>
 
@@ -19,7 +20,7 @@ WaveletTransformationResult dwt1(const QVector<double>& signal,
                                  EWaveletFamily waveletFamily);
 
 // Inverse discrete wavelet transformation
-QVector<double> idwt1(const QVector<double>& approx, 
+QVector<double> idwt1(const QVector<double>& approx,
                       const QVector<double>& details,
                       EWaveletFamily waveletFamily,
                       int lx = -1);
